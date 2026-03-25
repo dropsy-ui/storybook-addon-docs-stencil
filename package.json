@@ -16,6 +16,9 @@
   "scripts": {
     "start": "tsup --watch",
     "build": "npm run lint && tsup",
+    "changeset": "changeset",
+    "version-packages": "changeset version",
+    "release": "npm run build && changeset publish",
     "format": "npm run prettier:fix && npm run lint:fix",
     "lint": "eslint . --report-unused-disable-directives",
     "lint:fix": "npm run lint -- --fix",
@@ -38,6 +41,7 @@
   ],
   "license": "MIT",
   "devDependencies": {
+    "@changesets/cli": "^2.30.0",
     "@types/eslint__js": "^8.42.3",
     "@types/node": "^25.5.0",
     "eslint": "^9.18.0",
@@ -52,6 +56,9 @@
   },
   "peerDependencies": {
     "storybook": "^9.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "files": [
     "dist/**/*",

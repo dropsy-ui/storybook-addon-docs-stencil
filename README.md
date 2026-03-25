@@ -35,6 +35,10 @@ This package follows Storybook major versions:
 
 This means breaking compatibility with a new Storybook major is released as a new addon major.
 
+## Releasing
+
+Release and contribution guidelines live in `CONTRIBUTING.md`.
+
 ## Usage
 
 ### Configure stencil to generate docs-json at build time.
