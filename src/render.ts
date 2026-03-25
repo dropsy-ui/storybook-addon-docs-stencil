@@ -24,7 +24,7 @@ export const stencilRender = <
   options: Partial<RenderOptions> = {},
 ): ArgsStoryFn<TRenderer, TArgs> => {
   const opts: RenderOptions = {
-    eventNameing: 'native',
+    eventNaming: 'native',
     bindEvents: true,
     ...options,
   };
@@ -52,7 +52,7 @@ export const stencilRender = <
 
       if (arg.isAction) {
         const eventName =
-          opts.eventNameing === 'jsx'
+          opts.eventNaming === 'jsx'
             ? `${key.charAt(2).toLowerCase()}${key.slice(3)}`
             : key;
         handlers.push([eventName, arg]);

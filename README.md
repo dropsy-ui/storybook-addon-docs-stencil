@@ -92,9 +92,9 @@ import { extractArgTypesFactory } from '@dropsy-ui/storybook-addon-docs-stencil'
 
 /** @type { import('@dropsy-ui/storybook-addon-docs-stencil').ExtractArgTypesOptions } */
 const options = {
-  excludeCategories: 'porperties',
+  excludeCategories: 'properties',
   controlsFor: 'attributes',
-  eventNameing: 'jsx',
+  eventNaming: 'jsx',
 };
 
 export const parameters = {
@@ -108,7 +108,7 @@ export const parameters = {
 
 - `excludeCategories: Category[]`: categories to exclude from argTypes and docs (default: `['attributes]`).
 - `controlsFor: 'attributes' | 'properties'`: for wich category to render controls.
-- `eventNameing: 'native' | 'jsx'`: nameing of the arg key for events (default: 'native'). If jsx the args can be spread `<my-component {...args} />` when using JSX to render stories.
+- `eventNaming: 'native' | 'jsx'`: naming of the arg key for events (default: 'native'). If jsx the args can be spread `<my-component {...args} />` when using JSX to render stories.
 
 ### Default render method
 
@@ -132,8 +132,8 @@ export default preview;
 
 `stencilRender` can be configured by these options:
 
-- `eventNameing: 'native' | 'jsx'`: use the same nameing used in ExtractArgTypesOptions (default: 'native)
-- `bindEvents: boolean`: wheter events/actions should be bound (default: true)
+- `eventNaming: 'native' | 'jsx'`: use the same naming used in ExtractArgTypesOptions (default: 'native)
+- `bindEvents: boolean`: whether events/actions should be bound (default: true)
 
 eg:
 
@@ -186,5 +186,5 @@ export default {
 
 ### Breaking Changes in v7
 
-- attributes and properties are now shown as own categories, before both where visible under "props" with some inconsitency in naming (dashCase vs camelCase). Use `excludeCategories` to configure which categories are shown.
+- attributes and properties are now shown as own categories, before both where visible under "props" with some inconsistency in naming (dashCase vs camelCase). Use `excludeCategories` to configure which categories are shown.
 - removed configuration `dashCase` properties and attributes are now shown in single sections. Use `controlsFor` and `excludeCategories` instead of `dashCase`.
