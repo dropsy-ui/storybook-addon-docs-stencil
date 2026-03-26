@@ -88,8 +88,8 @@
     "icon": "https://raw.githubusercontent.com/dropsy-ui/storybook-addon-docs-stencil/refs/heads/main/dropsy-ui.png"
   },
   "keywords": [
+    "storybook-addon",
     "stencil",
-    "storybook",
-    "storybook-addon"
+    "storybook"
   ]
 }
