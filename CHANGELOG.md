@@ -1,5 +1,11 @@
 # Changelog
 
+## 10.0.2
+
+### Patch Changes
+
+- 23cae3e: Add storybook-addon as first keyword
+
 ## 10.0.1
 
 ### Patch Changes
