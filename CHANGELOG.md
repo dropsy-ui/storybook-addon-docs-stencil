@@ -1,5 +1,11 @@
 # Changelog
 
+## 10.0.1
+
+### Patch Changes
+
+- d458567: Add clearer description to package
+
 ## 10.0.0
 
 ### Major Changes
